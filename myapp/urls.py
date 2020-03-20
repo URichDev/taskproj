@@ -1,8 +1,7 @@
-from django.contrib import admin
-from django.urls import path, include
+from django.urls import path
 
-from .views import MainView
+from . import views
 
 urlpatterns = [
-    path('', views.MainView.as_view()),
+    path('', views.MainView.as_view())
 ]
